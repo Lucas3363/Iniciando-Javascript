@@ -1,75 +1,75 @@
-// var currentNumberWrapper = document.getElementById('currentNumber')
-// var currentNumber = 0;
+var currentNumberWrapper = document.getElementById('currentNumber')
+var currentNumber = 0;
 
-// function increment() {
-//     currentNumber = currentNumber + 1;
-//     currentNumberWrapper.innerHTML = currentNumber;
-//     if (currentNumber >= 0) {
-//         currentNumberWrapper.style.color = 'black'
-//     }
-// }
+function increment() {
+    currentNumber = currentNumber + 1;
+    currentNumberWrapper.innerHTML = currentNumber;
+    if (currentNumber >= 0) {
+        currentNumberWrapper.style.color = 'black'
+    }
+}
 
-// function decrement() {
-//     currentNumber = currentNumber - 1;
-//     currentNumberWrapper.innerHTML = currentNumber;
-//     if (currentNumber <= -1){
-//         currentNumberWrapper.style.color = 'red'
-//     }
-// }
+function decrement() {
+    currentNumber = currentNumber - 1;
+    currentNumberWrapper.innerHTML = currentNumber;
+    if (currentNumber <= -1){
+        currentNumberWrapper.style.color = 'red'
+    }
+}
 
-// function comparaNumeros(num1, num2) {
-//     const saoIguais = num1 === num2;
-//     const soma = num1 + num2;
+function comparaNumeros(num1, num2) {
+    const saoIguais = num1 === num2;
+    const soma = num1 + num2;
 
-//     return saoIguais ? "São iguais." : "não são iguais.";
+    return saoIguais ? "São iguais." : "não são iguais.";
 
-//     if(saoIguais) {
-//         return "São iguais";
-//     } else {
-//         return "São diferentes.";
-//     }
-// }
+    if(saoIguais) {
+        return "São iguais";
+    } else {
+        return "São diferentes.";
+    }
+}
 
-// function comparaNumeros(num1, num2) {
-//     if(!num1 || !num2) return 'Defina dois números!';
+function comparaNumeros(num1, num2) {
+    if(!num1 || !num2) return 'Defina dois números!';
 
-//     const primeiraFrase = criaPrimeiraFrase(num1, num2);
-//     const segundaFrase = criaSegundaFrase(num1, num2);
+    const primeiraFrase = criaPrimeiraFrase(num1, num2);
+    const segundaFrase = criaSegundaFrase(num1, num2);
 
-//     return `${primeiraFrase} ${segundaFrase}`;
-// }
+    return `${primeiraFrase} ${segundaFrase}`;
+}
 
-// function criaPrimeiraFrase(num1, num2) {
-//     let saoIguais = ' ';
+function criaPrimeiraFrase(num1, num2) {
+    let saoIguais = ' ';
 
-//     if (num1 !== num2) {
-//         saoIguais = 'não';
-//     }
+    if (num1 !== num2) {
+        saoIguais = 'não';
+    }
 
-//     return `Os números ${num1} e ${num2} ${saoIguais} são iguais.`;
-// }
+    return `Os números ${num1} e ${num2} ${saoIguais} são iguais.`;
+}
 
-// function criaSegundaFrase(num1, num2) {
-//     const soma = num1 + num2;
+function criaSegundaFrase(num1, num2) {
+    const soma = num1 + num2;
 
-//     let resultado10 = 'menor';
-//     let resultado20 = 'menor';
+    let resultado10 = 'menor';
+    let resultado20 = 'menor';
 
-//     const compara10 = soma > 10;
-//     const compara20 = soma > 20;
+    const compara10 = soma > 10;
+    const compara20 = soma > 20;
 
-//     if(compara10) {
-//         resultado10 = 'maior';
-//     }
+    if(compara10) {
+        resultado10 = 'maior';
+    }
 
-//     if(compara20) {
-//         resultado20 = 'maior';
-//     }
+    if(compara20) {
+        resultado20 = 'maior';
+    }
 
-//     return `Sua soma é ${soma}, que é ${resultado10} que 10 e ${resultado20} que 20.`;
-// }
+    return `Sua soma é ${soma}, que é ${resultado10} que 10 e ${resultado20} que 20.`;
+}
 
-// console.log(comparaNumeros(121, 1))
+console.log(comparaNumeros(121, 1))
 
 // a função gets é implementada dentro do sistema para ler as entradas(inputs) dos dados e a função print para imprimir a saída (output) de dados e já pula uma linha ("\n")
 // Abaixo segue um exemplo de código que você pode ou não utilizar
@@ -78,8 +78,8 @@
 // var raio = 3;
 
 
-// //TODO: Complete os espaços em branco com uma possível solução para o desafio
-// //Para precisão numérica utiliza-se o .toFixed(n)
+//TODO: Complete os espaços em branco com uma possível solução para o desafio
+//Para precisão numérica utiliza-se o .toFixed(n)
 // var volumeEsfera = (4/3) * PI * (raio * raio * raio);
 
 // console.log("VOLUME =          "  + volumeEsfera.toFixed(3));
